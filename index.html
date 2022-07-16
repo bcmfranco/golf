@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/mootools/MooTools-Core-1.6.0.js"></script>
+    <script src="lib/mootools/MooTools-More-1.6.0.js"></script>
+    <link rel="stylesheet" href="lib/decorous/decorous.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Golf</title>
+</head>
+<body>
+    <h1>Golf</h1>
+
+    <div id="weather">
+        <div id="wind">
+            <div class="windes" id="direction"></div>
+            <div class="windes" id="speed"></div>
+        </div>
+        <div id="distance"></div>
+    </div>
+
+    <div id="field">
+        <div id="hole"></div>
+        <div id="ball"></div>
+    </div>
+
+    <div id="shot">
+        <div>
+            <div id="clubs" class="wiz_on">
+                <div class="club_buttons pressable" id="club_back"><</div>
+                <div id="club_show" class="pressable">
+                    <div id="club_0">WOOD</div>
+                    <div id="club_1">WEDGE</div>
+                    <div id="club_2">PUTTER</div>
+                    <div id="club_3">IRON</div>
+                    <div id="club_4">HYBRID</div>
+                </div>
+                <div class="club_buttons pressable" id="club_foward">></div>
+            </div>
+        </div>
+        <div id="swing" class="wiz_off">swing</div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

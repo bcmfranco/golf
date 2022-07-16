@@ -1,0 +1,99 @@
+#weather,
+#shot{
+    border: 1px solid black;
+    height: 50px;
+    width: 300px;
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+    padding: 0 5px;
+    display: grid;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px auto 10px auto;
+}
+
+#shot{
+    grid-template-columns: unset;
+}
+
+#field{
+    border: 1px solid black;
+    height: 500px;
+    width: 250px;
+    margin: auto;
+}
+
+#hole{
+    background-image: url("../img/hole.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+}
+
+#ball{
+    background-image: url("../img/ball.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+}
+
+#wind,
+#distance{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#distance{
+    width: 150px;
+    text-indent: 5px;
+    grid-template-columns: unset;
+}
+
+.wiz_on{
+    display: grid;
+}
+
+.wiz_off{
+    display: none;
+}
+
+.pressable{
+    box-shadow: 2px 2px var(--light_filling);
+    aspect-ratio: 2/1;
+}
+
+#clubs{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 100%;
+    align-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+#club_show div{
+    display: none;
+}
+
+:root {
+    --light_back: rgb(247, 247, 247);
+    --light_fonts: rgb(46, 46, 46);
+    --light_borders: rgb(19, 19, 19);
+    --light_shadows: rgb(114, 114, 114);
+    --light_filling: rgb(140, 140, 140);
+}
