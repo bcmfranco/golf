@@ -5,10 +5,18 @@
 }
 
 
-#power_barr #pb_stop,
 #power_barr #pb_start{
     border: 1px solid black;
     height: 30px;
     width: 60px;
-    margin: 10px
+    margin: 10px;
+    background-color: inherit;
+}
+
+#power_barr #pb_barr{
+    background-color: blue;
+    opacity: 0;
+    border: 1px solid black;
+    width: 300px;
+    height: 50px;
 }
